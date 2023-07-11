@@ -1,5 +1,5 @@
 ﻿using Bogus;
-using NetCoreGraphQlLearn.Models;
+using NetCoreGraphQlLearn.Entities;
 
 namespace NetCoreGraphQlLearn.Extensions
 {

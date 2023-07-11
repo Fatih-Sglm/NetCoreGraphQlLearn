@@ -1,4 +1,4 @@
-﻿namespace NetCoreGraphQlLearn.Models
+﻿namespace NetCoreGraphQlLearn.Entities
 {
     public class League
     {

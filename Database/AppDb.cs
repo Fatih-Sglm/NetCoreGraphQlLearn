@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using NetCoreGraphQlLearn.Entities;
 using NetCoreGraphQlLearn.Extensions;
-using NetCoreGraphQlLearn.Models;
 
 namespace NetCoreGraphQlLearn.Database
 {

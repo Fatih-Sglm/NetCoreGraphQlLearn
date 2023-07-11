@@ -1,4 +1,4 @@
-﻿namespace NetCoreGraphQlLearn.Models
+﻿namespace NetCoreGraphQlLearn.Entities
 {
     public class Team
     {
@@ -7,7 +7,7 @@
         public string TeamColors { get; set; }
         public string iconLink { get; set; }
         public List<Player>? Players { get; set; }
-        public League? League { get; set; }
+        public League League { get; set; }
         public int LeagueId { get; set; }
 
     }

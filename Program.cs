@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NetCoreGraphQlLearn.Database;
 using NetCoreGraphQlLearn.Extensions;
+using NetCoreGraphQlLearn.Mapster;
 using NetCoreGraphQlLearn.Queries;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDb>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("Mssql")));
 builder.Services.AddGraphQLServer().AddQueryType<Queries>().AddProjections().AddFiltering().AddSorting();
+builder.Services.AddCustomMapster();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

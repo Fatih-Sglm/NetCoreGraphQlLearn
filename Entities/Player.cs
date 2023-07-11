@@ -1,4 +1,4 @@
-﻿namespace NetCoreGraphQlLearn.Models
+﻿namespace NetCoreGraphQlLearn.Entities
 {
     public class Player
     {
@@ -6,7 +6,7 @@
         public string Name { get; set; }
         public int Age { get; set; }
         public decimal AnnualSalary { get; set; }
-        public Team? Team { get; set; }
+        public Team Team { get; set; }
         public int TeamId { get; set; }
     }
 }
